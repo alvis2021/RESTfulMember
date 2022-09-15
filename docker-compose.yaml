@@ -10,7 +10,8 @@ services:
     links:
       - mongo-db
     depends_on:
-      - "mongo-db"    
+      - "mongo-db"
+    restart: unless-stopped
   mongo-db:
     image: mongo
     ports:
@@ -18,3 +19,4 @@ services:
     container_name: mongo-db
     volumes:
       - ./db/:/data/db
+    restart: unless-stopped

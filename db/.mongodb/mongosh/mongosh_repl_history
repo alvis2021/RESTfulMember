@@ -1,0 +1,3 @@
+exit
+use member user: "root",pwd:  "root", roles: [ { role: "readWrite", db: "member" }]})
+use member

@@ -1,12 +1,14 @@
----
-typora-copy-images-to: ./image
----
-
 # RESTfulMember   DEMO  柯O銘  
 
+此為Restful API 使用了 JAVA17、 Spring Boot、MongoDB、Gradle、Docker、docker-compose。
+
+Java dependencies 選用了Spring WEB 和Spring Data MongoDB，選用了Gradle。
 
 
-### Read 讀取DB中所有member 於 http://188.166.178.174/使用GET
+
+# REST API呼叫方式
+
+### Read 讀取DB中所有member資料，使用GET於 http://188.166.178.174/ 
 
 http://188.166.178.174/
 
@@ -165,4 +167,6 @@ services:
 ```
 docker-compose up -d
 ```
+
+
 
